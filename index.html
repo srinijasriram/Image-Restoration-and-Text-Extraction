@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Recogination and Extraction</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f7d3f7;
+  }
+  
+  .background {
+    background-color: #ebadd3;
+    padding: 100px;
+  }
+  
+  @keyframes moveHeading {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0); }
+  }
+  
+  .moving-heading {
+    animation: moveHeading 2s ease infinite;
+    text-align: center;
+  }
+    </style>
+</head>
+<body>
+    <div class="background">
+    <h1 class="moving-heading">Image Recogination and Text Extraction</h1>
+    </div>
+    <form id="uploadForm" enctype="multipart/form-data" method="POST" action="/upload">
+        <input type="file" name="image" id="imageInput">
+        <input type="submit" value="Upload">
+      </form>
+      
+    <div id="output"></div>
+    
+</body>
+</html>
