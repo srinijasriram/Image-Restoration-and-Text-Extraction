@@ -1,5 +1,3 @@
-# app.py
-
 from flask import Flask, render_template, request, redirect, url_for
 import Main
 
@@ -34,3 +32,4 @@ def result(text):
 
 if __name__ == '__main__':
     app.run(debug=True)
+
